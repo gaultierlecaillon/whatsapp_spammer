@@ -1,7 +1,7 @@
 function whatsAppText(message) {
 	window.InputEvent = window.Event || window.InputEvent;
 	var event = new InputEvent('input', {bubbles: true});
-	var textbox = document.querySelector('#main > footer > div.block-compose > div.input-container > div > div.input');
+	var textbox = document.getElementsByClassName('_2S1VP')[0];
 	textbox.textContent = message;
 	textbox.dispatchEvent(event);
 	document.querySelector('[data-icon="send"]').click()﻿;
